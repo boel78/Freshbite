@@ -12,6 +12,27 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        bounce: {
+          '0%, 100%': {
+            transform: 'translateY(-6%)',
+            animationTimingFunction: 'ease-in-out',
+          },
+          '50%': {
+            transform: 'translateY(0)',
+            animationTimingFunction: 'ease-in-out',
+          },
+        },
+      },
+      animation: {
+        bouncing: 'bounce 3s infinite',
+      },
+      animationDelay: {
+        '0': '0ms',
+        '200': '200ms',
+        '400': '400ms',
+        '600': '600ms',
+      },
     },
   },
   plugins: [],
