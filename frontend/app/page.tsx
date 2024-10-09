@@ -1,9 +1,11 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
       <div className="flex justify-between pt-24 bg-green-600">
+      
         <div className="flex flex-col gap-36">
           <Image
             className="ml-52 animate-bouncing"
@@ -25,14 +27,15 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-8 items-center pt-8">
-          <h1 className="font-bold text-6xl">Freshbite</h1>
+          <h1 className="font-bold text-8xl">Freshbite</h1>
           <h2 className="font-semibold text-4xl">Convenience Meets Healthy Living</h2>
+          <Button>To Products</Button>
           <Image
-          src={"/ProductImages/image1.webp"}
+          src={"/HeroSection/heropic.avif"}
           alt="mealPrepBox"
           width={800}
           height={200}
-          className="mt-80"
+          className="mt-64"
           />
         </div>
 
@@ -56,7 +59,6 @@ export default function Home() {
             style={{ animationDelay: '400ms'}}
           />
         </div>
-
 
       </div>
     </div>
